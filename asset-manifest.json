@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/abhishekg1981992/ManthanGuru.git/static/css/main.d8d4dc96.chunk.css",
+    "main.js": "/abhishekg1981992/ManthanGuru.git/static/js/main.fc16c240.chunk.js",
+    "main.js.map": "/abhishekg1981992/ManthanGuru.git/static/js/main.fc16c240.chunk.js.map",
+    "runtime-main.js": "/abhishekg1981992/ManthanGuru.git/static/js/runtime-main.c2dca385.js",
+    "runtime-main.js.map": "/abhishekg1981992/ManthanGuru.git/static/js/runtime-main.c2dca385.js.map",
+    "static/css/2.a5f06b7f.chunk.css": "/abhishekg1981992/ManthanGuru.git/static/css/2.a5f06b7f.chunk.css",
+    "static/js/2.c656d251.chunk.js": "/abhishekg1981992/ManthanGuru.git/static/js/2.c656d251.chunk.js",
+    "static/js/2.c656d251.chunk.js.map": "/abhishekg1981992/ManthanGuru.git/static/js/2.c656d251.chunk.js.map",
+    "index.html": "/abhishekg1981992/ManthanGuru.git/index.html",
+    "precache-manifest.fea8f5778f389142dc49fbe9f4915866.js": "/abhishekg1981992/ManthanGuru.git/precache-manifest.fea8f5778f389142dc49fbe9f4915866.js",
+    "service-worker.js": "/abhishekg1981992/ManthanGuru.git/service-worker.js",
+    "static/css/2.a5f06b7f.chunk.css.map": "/abhishekg1981992/ManthanGuru.git/static/css/2.a5f06b7f.chunk.css.map",
+    "static/css/main.d8d4dc96.chunk.css.map": "/abhishekg1981992/ManthanGuru.git/static/css/main.d8d4dc96.chunk.css.map",
+    "static/media/Manthan-Guru-Logo.png": "/abhishekg1981992/ManthanGuru.git/static/media/Manthan-Guru-Logo.03e2a8ac.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2dca385.js",
+    "static/css/2.a5f06b7f.chunk.css",
+    "static/js/2.c656d251.chunk.js",
+    "static/css/main.d8d4dc96.chunk.css",
+    "static/js/main.fc16c240.chunk.js"
+  ]
+}
