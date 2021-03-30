@@ -1,0 +1,21 @@
+.breadcrumbinner{
+    padding: 0!important;
+    width: 100%;
+    margin: 0 auto 30px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
+    max-width: 100%;
+    display: block;
+    float: inherit;
+    clear: both;
+}
+
+.breadcrumb{
+    border-bottom: solid .5px rgba(37,56,88,.2);
+    padding: 8px 0;
+    font-size: 12px;
+    color: #5e6c84;
+    font-weight: 400;
+}

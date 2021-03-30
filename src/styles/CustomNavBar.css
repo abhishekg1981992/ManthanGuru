@@ -1,0 +1,47 @@
+.navbar {
+    background-color: lightblue;
+}
+
+.navbar a{
+    color: black;
+}
+
+.logo {
+    padding-left: 2rem;
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav-links {
+    float: right;
+    padding-right: 10rem;
+}
+
+.nav-link :hover {
+background-color: bisque !important;    
+    color: #ed1212;
+		cursor: pointer;
+}
+
+.dropdown-menu {
+    z-index: 1000;
+    background-color: white;
+    color: black;
+    display: block;
+}
+
+.dropdown {
+    display : inherit;
+}
+
+.contact-icons {
+    height: 2rem;
+    width: 2rem;    
+}
