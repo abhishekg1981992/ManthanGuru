@@ -6,7 +6,6 @@ export default class CustomNavBar extends Component {
 
     constructor(props) {
         super(props);
-        // Don't call this.setState() here!
         this.state = {
             showDropdown: ""
         };
@@ -39,7 +38,7 @@ export default class CustomNavBar extends Component {
                     <div class="row nav-links" onMouseLeave={(e) => this.handleHover(e, "")}>
 
                         <div class="dropdown" onMouseEnter={(e) => this.handleHover(e, "healthInsurance")}>
-                            <a class="nav-link" href="/users" id="life" >Health Insurance</a>
+                            <a class="nav-link" href="#/users" id="life" >Health Insurance</a>
                             {showDropdown === "healthInsurance" &&
                                 (
                                     <div class="dropdown-menu">
@@ -52,7 +51,7 @@ export default class CustomNavBar extends Component {
                         </div>
                         {/* <Nav.Link href="/about">About Us</Nav.Link> */}
                         <div class="dropdown" onMouseEnter={(e) => this.handleHover(e, "aboutUs")} onMouseLeave={(e) => this.handleHover(e, false)}>
-                            <a class="nav-link" href="/users" id="life" >Users</a>
+                            <a class="nav-link" href="#/users" id="life" >Users</a>
                             {showDropdown === "aboutUs" &&
                                 (
                                     <div class="dropdown-menu">

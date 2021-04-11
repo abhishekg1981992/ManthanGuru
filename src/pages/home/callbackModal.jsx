@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
-import 'react-phone-number-input/style.css';
-import PhoneInput from 'react-phone-number-input';
+// import 'react-phone-number-input/style.css';
+// import PhoneInput from 'react-phone-number-input';
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+import axios from 'axios';
 
 const holdOn = {
     position: "absolute",
@@ -25,6 +28,9 @@ const header2 = {
     paddingTop: "20px"
 }
 
+const numberInput = {
+    width:"inherit"
+}
 
 class CallbackModal extends Component {
     constructor(props) {
@@ -55,10 +61,39 @@ class CallbackModal extends Component {
 
     }
 
-    handleCallBack = () => {
+    handleCallBack = async (e) => {
         console.log("Call back triggered");
-        console.log("name:" + this.state.visitorName);
-        console.log("mobile no.:" + this.state.mobileCode);
+        let name = this.state.visitorName;
+        let mobile = '+'+this.state.mobileCode;
+        e.preventDefault();
+        console.log({ name, mobile });
+        
+        if(name!="" && mobile.length>3)
+        {
+            const response = await fetch("http://localhost:8080/api/tutorials/access", { 
+                method: 'POST', 
+                headers: { 
+                    'Content-type': 'application/json'
+                }, 
+                body: JSON.stringify({name, mobile}) 
+            }); 
+              const resData = await response.json(); 
+              if (resData.status === 'success'){
+              //   alert("Message Sent."); 
+              console.log("Message Sent.");   
+              this.toggle()
+            }else if(resData.status === 'fail'){
+              console.log("Sorry! Message failed to send.") 
+              //   alert("Message failed to send.")
+            }
+        }
+        else
+        {
+            console.log("Name and Number are mandatory");
+        }
+        
+        
+
 
     }
 
@@ -95,9 +130,11 @@ class CallbackModal extends Component {
                                 <div class="col-sm-12 pb-4">
                                     <PhoneInput
                                         placeholder="Enter phone number"
+                                        country='in'
                                         value={mobileCode}
                                         onChange={setMobileCode}
                                         className="nameInput borderInput"
+                                        inputClass="mobileInput"
                                     />
                                 </div>
                                 <div class="col-sm-12">
