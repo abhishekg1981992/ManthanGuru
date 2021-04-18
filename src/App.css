@@ -83,3 +83,9 @@ nav .burger {
     border-bottom: 0px solid #fff;
   }
 }
+
+@media all and (max-width: 480px) {
+  .modal-container {
+    width: 300px;
+  }
+}

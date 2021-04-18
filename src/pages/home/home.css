@@ -349,3 +349,22 @@ h5 {
 .info {
   color: blue;
 }
+
+.hold-on {
+  position: "absolute";
+  height: 75px;
+}
+
+.homeModalHeader {
+  border-bottom: none;
+  padding: 0rem 1rem 0rem 0rem;
+}
+
+.homeModalBody {
+  padding: 0rem;
+  overflow-y: auto;
+}
+
+.row {
+  margin: 0rem;
+}
