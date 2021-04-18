@@ -64,7 +64,7 @@ nav .burger {
     height: 100vh;
     background: #ff4e5d;
     padding: 40px;
-    width: 50%;
+    width: 40%;
     transform: translateX(-500px);
     transition: 0.5s ease-in-out;
     z-index: 1;

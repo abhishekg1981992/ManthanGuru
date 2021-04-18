@@ -367,4 +367,11 @@ h5 {
 
 .row {
   margin: 0rem;
+  justify-content: center;
+}
+
+@media all and (max-width: 480px) {
+  .mid-row .container .list ul li {
+    width: 50%;
+  }
 }
